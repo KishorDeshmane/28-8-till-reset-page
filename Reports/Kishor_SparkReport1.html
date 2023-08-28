@@ -1,0 +1,1572 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Kishor_Automation_Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Kishor_Automation_Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Aug 25, 2023 05:34:27 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Aug 25, 2023 05:34:27 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Aug 25, 2023 05:34:30 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='100%'><b>7</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'><b>0</b> steps passed</small></div>
+<div>
+<small data-tooltip='3%'><b>7</b> steps failed,
+<b>188</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Validate executive log in page functionality":0.873
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@Regression</td>
+<td>0</td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@Executive_log_in_page</td>
+<td>0</td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>AppName</td>
+<td>Shield</td>
+</tr>
+<tr>
+<td>user</td>
+<td>QA_Automation_Tester</td>
+</tr>
+<tr>
+<td>build</td>
+<td>Shield_1</td>
+</tr>
+<tr>
+<td>os</td>
+<td>Windows</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 7,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 7,
+warningGrandChild: 0,
+skipGrandChild: 188,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@Regression</a><a class="dropdown-item" href="#">@Executive_log_in_page</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Validate executive log in page functionality</p>
+            <p class="text-sm">
+              <span>5:34:29 PM</span> / <span>00:00:00:873</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Validate executive log in page functionality</h5>
+<span class='badge badge-success'>08.25.2023 5:34:29 PM</span>
+<span class='badge badge-danger'>08.25.2023 5:34:30 PM</span>
+<span class='badge badge-default'>00:00:00:873</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Validate that elements are present in executive log in page</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" >
+                <span>Given Verify that user is on the log in as executive page as expected page title "Shield"</span>
+      <div>Step undefined
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that title text Signin to Your Account is displayed in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then verify that subtitle Signin to manage, your bussiness is displayed in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that email field title Email is displayed in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that email place holder value should be "Enter your email address" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that email user field be clickable in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that password field title Password should displayed in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that password placeholder value should be "Enter your password" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that password user field be clickable in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that sign in button should be displayed in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that sign in button should be clickable in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that forget password link should be displayed in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that forget password link should be clickable in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that logo of shield should be displayed in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that title text sign in to your account is displayed in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that subtitle Signin to Your Account should be displayed in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="19"><span class="badge log fail-bg mr-2">Fail</span>Validate that email user field in executive log in page</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" >
+                <span>Given Verify that user is on the executive log in page as expected page title is "Shield"</span>
+      <div>Step undefined
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only valid email and try to sign in into app "ashish.upadhyay@iffort.com" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that executive user should get the expected green tick in email user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only valid email and try to sign in into application "kd@iffort.co.uk" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that executive user should get the expected green tick in email user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only valid email and try to sign in into application "info@iffort.ifff.com" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that executive user should get the expected green tick in email user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only valid email and try to sign in into application "ashish-upadhyay@iffort.com" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that executive user should get the expected green tick in email user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only valid email and try to sign in into application "ashish+upadhyay@iffort.com" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that executive user should get the expected green tick in email user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only invalid space email and try to sign in into aplication "  abcdefg@co.in  " in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that executive user should get the expected green tick in email user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only invalid space email and try to sign in into aplication "abcdefg@co.in         " in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that executive user should get the expected green tick in email user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only invalid space email and try to sign in into aplication "          abcdefg@co.in" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that executive user should get the expected green tick in email user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter 190 characters into the email user field and try to sign in into the application</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that executive user should get the expected green tick in email user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter 100 characters into the email user field and try to sign in into the application</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that executive user should get the expected green tick in email user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter 50 characters into the email user field and try to sign in into the application</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that executive user should get the expected green tick in email user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only invalid email and try to sign in into aplication "abcdefg" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that executive user should get the expected red tick in email user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only invalid email and try to sign in into aplication "abcdefg@" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that executive user should get the expected red tick in email user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only invalid email and try to sign in into aplication "abcdefg.co.in" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that executive user should get the expected red tick in email user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only invalid email and try to sign in into aplication "abcdefg@co.123" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that executive user should get the expected red tick in email user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only invalid email and try to sign in into aplication "abcdefg@co" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that executive user should get the expected red tick in email user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only invalid email and try to sign in into aplication "abcdefg@@@co" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that executive user should get the expected red tick in email user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only invalid email and try to sign in into aplication "@example.com" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that executive user should get the expected red tick in email user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only invalid email and try to sign in into aplication "abcsdf@.com" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that executive user should get the expected red tick in email user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only invalid email and try to sign in into aplication "abcsd f@co.com" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that executive user should get the expected red tick in email user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only invalid email and try to sign in into aplication "Kabc.f@co.com" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that executive user should get the expected red tick in email user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only invalid email and try to sign in into aplication "!#$%$#e@example.com" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that executive user should get the expected red tick in email user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only invalid email and try to sign in into aplication "!#$%$#e@&^%$.com" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that executive user should get the expected red tick in email user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only invalid email and try to sign in into aplication "!#$%$#e@^%$#.&%^" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that executive user should get the expected red tick in email user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="69"><span class="badge log fail-bg mr-2">Fail</span>Validate password user field in executive log in page</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" >
+                <span>Given Verify that user is on the executive log in page as expected page title is "Shield"</span>
+      <div>Step undefined
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only valid password and try to sign in into appli "executive@123" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then verify that executive user should get the expected green tick in password user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only valid password and try to sign in into app "executive@123" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then verify that executive user should get the expected green tick in password user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only valid password and try to sign in into app "executive-@123" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then verify that executive user should get the expected green tick in password user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only valid password and try to sign in into app "@executive-123" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then verify that executive user should get the expected green tick in password user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only valid password and try to sign in into app "1@executive-123" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then verify that executive user should get the expected green tick in password user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only valid password and try to sign in into app "**executive-123" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then verify that executive user should get the expected green tick in password user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only valid password and try to sign in into app "**executive$123" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then verify that executive user should get the expected green tick in password user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only valid password and try to sign in into app "**amiN$/*98" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then verify that executive user should get the expected green tick in password user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only valid password and try to sign in into app "**a::iN$/*98" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then verify that executive user should get the expected green tick in password user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only invalid value into the password user field "AD@@%%^^&&in@@112233" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then verify that executive user should get the expected green tick in password user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only invalid value into the password user field "Av$1234567" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then verify that executive user should get the expected green tick in password user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only invalid value into the password user field "AD@@%%^^&&in@@112233" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then verify that executive user should get the expected green tick in password user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only valid password and try to sign in into app "executive @123" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then verify that executive user should get the expected red tick in password user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only valid password and try to sign in into app "     " in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then verify that executive user should get the expected red tick in password user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only valid password and try to sign in into app "abcd" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then verify that executive user should get the expected red tick in password user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only valid password and try to sign in into app "ABCD" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then verify that executive user should get the expected red tick in password user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only invalid value into the password user field "1234567890" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then verify that executive user should get the expected red tick in password user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only invalid value into the password user field "qwertyuiop" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then verify that executive user should get the expected red tick in password user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only invalid value into the password user field "$%^&$%$%#^^$$" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then verify that executive user should get the expected red tick in password user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only invalid value into the password user field "@#$%^&*" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then verify that executive user should get the expected red tick in password user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only invalid value into the password user field "ASDFGFDSAS" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then verify that executive user should get the expected red tick in password user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only invalid value into the password user field "123456qwere" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then verify that executive user should get the expected red tick in password user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only invalid value into the password user field "#$$%ASDSAS" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then verify that executive user should get the expected red tick in password user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only invalid value into the password user field "asdfghQWERRT" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then verify that executive user should get the expected red tick in password user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only invalid value into the password user field "12345@#$%^%$" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then verify that executive user should get the expected red tick in password user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only invalid value into the password user field "123" in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then verify that executive user should get the expected red tick in password user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter only invalid value into the password user field "               " in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then verify that executive user should get the expected red tick in password user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="125"><span class="badge log fail-bg mr-2">Fail</span>Validate that sign in button functionality in executive user log in page</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" >
+                <span>Given Verify that user is on the executive log in page as expected page title is "Shield"</span>
+      <div>Step undefined
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter invalid email "abcdefghijk" and invalid password "123" into the userfields and click on sign in into appli</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that executive user should get the expected red tick in email user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter invalid email "123456789" and invalid password "123" into the userfields and click on sign in into applicaion</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that executive user should get the expected red tick in email user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter invalid email "QWERTYUNHJ" and invalid password "123" into the userfields and click on sign in into applicaion</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that executive user should get the expected red tick in email user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter invalid email "!@#$%%^" and invalid password "123" into the userfields and click on sign in into applicaion</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that executive user should get the expected red tick in email user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter invalid email "abcdefg@" and valid password "executive@123" into the userfields and click on sign in into applicaion</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that executive user should get the expected red tick in email user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter invalid email "abcdefg.co.in" and valid password "executive@123" into the userfields and click on sign in into applicaion</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that executive user should get the expected red tick in email user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter invalid email "abcdefg@co.123" and valid password "executive@123" into the userfields and click on sign in into applicaion</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that executive user should get the expected red tick in email user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter invalid email "abcdefg@co" and valid password "executive@123" into the userfields and click on sign in into applicaion</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that executive user should get the expected red tick in email user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter invalid email "abcdefg@@@co" and valid password "executive@123" into the userfields and click on sign in into applicaion</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that executive user should get the expected red tick in email user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter invalid email "@example.com" and valid password "executive@123" into the userfields and click on sign in into applicaion</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that executive user should get the expected red tick in email user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter invalid email "abcsdf@.com" and valid password "executive@123" into the userfields and click on sign in into applicaion</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that executive user should get the expected red tick in email user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter invalid email "abcsd f@co.com" and valid password "executive@123" into the userfields and click on sign in into applicaion</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that executive user should get the expected red tick in email user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter invalid email "executive.d@co.in" and valid password "executive@123" into the userfields and click on sign in into applicaion</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that executive user should get the expected red tick in email user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter invalid email "executive.d@co.in" and valid password "Pdmin@+123" into the userfields and click on sign in into applicaion</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that executive user should get the expected red tick in email user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter invalid email "adexecutive.dc@co.in" and valid password "Pdmin@+123" into the userfields and click on sign in into applicaion</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that executive user should get the expected red tick in email user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter valid email "ashish.upadhyay@iffort.com" and invalid password "dmin@p123" into the userfields and click on sign in into applicaion</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then verify that executive user should get the expected red tick in password user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter valid email "ashish.upadhyay@iffort.com" and invalid password "Qmin$$$12345" into the userfields and click on sign in into applicaion</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that executive user should get the expected note contaiing invalid credentials is displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter valid email "ashish.upadhyay@iffort.com" and invalid password "**a::iN$/*98" into the userfields and click on sign in into applicaion</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that executive user should get the expected note contaiing invalid credentials is displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter valid email "ashish.upadhyay@iffort.com" and invalid password "abcd" into the userfields and click on sign in into applicaion</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then verify that executive user should get the expected red tick in password user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter valid email "ashish.upadhyay@iffort.com" and invalid password "ABCD" into the userfields and click on sign in into applicaion</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then verify that executive user should get the expected red tick in password user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter valid email "ashish.upadhyay@iffort.com" and invalid password "ASDFGFDSAS" into the userfields and click on sign in into applicaion</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then verify that executive user should get the expected red tick in password user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter valid email "ashish.upadhyay@iffort.com" and invalid password "1234567890" into the userfields and click on sign in into applicaion</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then verify that executive user should get the expected red tick in password user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter valid email "ashish.upadhyay@iffort.com" and invalid password "qwertyuiop" into the userfields and click on sign in into applicaion</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then verify that executive user should get the expected red tick in password user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter valid email "ashish.upadhyay@iffort.com" and invalid password "$%^&$%$%#^^$$" into the userfields and click on sign in into applicaion</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then verify that executive user should get the expected red tick in password user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter valid email "ashish.upadhyay@iffort.com" and invalid password "@#$%^&*" into the userfields and click on sign in into applicaion</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then verify that executive user should get the expected red tick in password user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter valid email "ashish.upadhyay@iffort.com" and invalid password "ASDFGFDSAS" into the userfields and click on sign in into applicaion</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then verify that executive user should get the expected red tick in password user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter valid email "ashish.upadhyay@iffort.com" and invalid password "123456qwere" into the userfields and click on sign in into applicaion</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then verify that executive user should get the expected red tick in password user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter valid email "ashish.upadhyay@iffort.com" and invalid password "#$$%ASDSAS" into the userfields and click on sign in into applicaion</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then verify that executive user should get the expected red tick in password user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter valid email "ashish.upadhyay@iffort.com" and invalid password "asdfghQWERRT" into the userfields and click on sign in into applicaion</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then verify that executive user should get the expected red tick in password user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter valid email "ashish.upadhyay@iffort.com" and invalid password "12345@#$%^%$" into the userfields and click on sign in into applicaion</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then verify that executive user should get the expected red tick in password user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter valid email "ashish.upadhyay@iffort.com" and invalid password "123" into the userfields and click on sign in into applicaion</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then verify that executive user should get the expected red tick in password user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When executive user enter valid email "ashish.upadhyay@iffort.com" and invalid password "               " into the userfields and click on sign in into applicaion</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then verify that executive user should get the expected red tick in password user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="191"><span class="badge log fail-bg mr-2">Fail</span>Validate that executive log in user should be able to log in into the application with valid credentials</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" >
+                <span>Given Verify that user is on the executive log in page as expected page title is "Shield"</span>
+      <div>Step undefined
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When Verify that after executive enter the valid executive credentials into the email user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When Verify that after executive enter the valid executive credentials into the password user field in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that after entering the valid executive credentials into the email and password user is able to click on the sign in button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that user is log in executive successfully with the expected page tilte "Shield"</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="197"><span class="badge log fail-bg mr-2">Fail</span>Validate that partner executive should not be able to log in into the application with valid credentials through the executive log in page</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" >
+                <span>Given Verify that user is on the executive log in page as expected page title is "Shield"</span>
+      <div>Step undefined
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When partner executive enter valid email and valid password into the userfields and click on sign in into applicaion for executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then verify that user should get the expected you are not allowed to access executive area in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="201"><span class="badge log fail-bg mr-2">Fail</span>Validate that password eye button in executive log in page</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" >
+                <span>Given Verify that user is on the executive log in page as expected page title is "Shield"</span>
+      <div>Step undefined
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then Verify that executive user get the eye button in the password userfield in executive log in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>7</span>
+</span>
+<p class="name">@Regression</p>
+<p class="duration text-sm">7 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Regression</h4>
+<span status="fail" class='badge log badge-danger'>7 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:34:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Validate that elements are present in executive log in page</a>
+<div class="">
+<span class="badge badge-default">Validate executive log in page functionality.Validate that elements are present in executive log in page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:34:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='19'>Validate that email user field in executive log in page</a>
+<div class="">
+<span class="badge badge-default">Validate executive log in page functionality.Validate that email user field in executive log in page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:34:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='69'>Validate password user field in executive log in page</a>
+<div class="">
+<span class="badge badge-default">Validate executive log in page functionality.Validate password user field in executive log in page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:34:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='125'>Validate that sign in button functionality in executive user log in page</a>
+<div class="">
+<span class="badge badge-default">Validate executive log in page functionality.Validate that sign in button functionality in executive user log in page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:34:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='191'>Validate that executive log in user should be able to log in into the application with valid credentials</a>
+<div class="">
+<span class="badge badge-default">Validate executive log in page functionality.Validate that executive log in user should be able to log in into the application with valid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:34:30 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='197'>Validate that partner executive should not be able to log in into the application with valid credentials through the executive log in page</a>
+<div class="">
+<span class="badge badge-default">Validate executive log in page functionality.Validate that partner executive should not be able to log in into the application with valid credentials through the executive log in page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:34:30 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='201'>Validate that password eye button in executive log in page</a>
+<div class="">
+<span class="badge badge-default">Validate executive log in page functionality.Validate that password eye button in executive log in page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>7</span>
+</span>
+<p class="name">@Executive_log_in_page</p>
+<p class="duration text-sm">7 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Executive_log_in_page</h4>
+<span status="fail" class='badge log badge-danger'>7 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:34:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Validate that elements are present in executive log in page</a>
+<div class="">
+<span class="badge badge-default">Validate executive log in page functionality.Validate that elements are present in executive log in page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:34:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='19'>Validate that email user field in executive log in page</a>
+<div class="">
+<span class="badge badge-default">Validate executive log in page functionality.Validate that email user field in executive log in page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:34:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='69'>Validate password user field in executive log in page</a>
+<div class="">
+<span class="badge badge-default">Validate executive log in page functionality.Validate password user field in executive log in page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:34:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='125'>Validate that sign in button functionality in executive user log in page</a>
+<div class="">
+<span class="badge badge-default">Validate executive log in page functionality.Validate that sign in button functionality in executive user log in page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:34:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='191'>Validate that executive log in user should be able to log in into the application with valid credentials</a>
+<div class="">
+<span class="badge badge-default">Validate executive log in page functionality.Validate that executive log in user should be able to log in into the application with valid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:34:30 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='197'>Validate that partner executive should not be able to log in into the application with valid credentials through the executive log in page</a>
+<div class="">
+<span class="badge badge-default">Validate executive log in page functionality.Validate that partner executive should not be able to log in into the application with valid credentials through the executive log in page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:34:30 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='201'>Validate that password eye button in executive log in page</a>
+<div class="">
+<span class="badge badge-default">Validate executive log in page functionality.Validate that password eye button in executive log in page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
